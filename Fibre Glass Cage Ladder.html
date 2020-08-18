@@ -86,11 +86,13 @@
     function update()
     {
       var one = document.getElementById('h1').value;
+      console.log(one);
+      alert(one);
       var two = document.getElementById('sec');
       var link = document.getElementById("fill");
       var selected_index = oForm.elements["height"].selectedIndex;
       link.setAttribute("action","mailto:esafe@esafe.co.in?subject=Customer Feedback - Fibre Glass Cage Ladder");
-      alert(one);
+      
 //       // Changing the href attribute value
 //       if(selected_index == 1)
 //         link.setAttribute("action", "mailto:esafe@esafe.co.in?subject=Inquiry%20-%20Fibre%20Glass%20Double%20Step%20Ladder&body=We%20want%20Fibre%20Glass%20Cage%20Ladder%20with%20folowing%20speifications: 1");
