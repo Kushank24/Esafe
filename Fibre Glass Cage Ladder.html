@@ -85,18 +85,11 @@
   <script>
     function update()
     {
-      var one = document.getElementById('height');
-      var one1 = one.value;
-      var one2 = document.getElementById('height').value;
-      console.log(document);
-      console.log(one);
-      console.log(one1);
-      console.log(one2);
-     
+      var one = document.getElementById('height').value;
       var two = document.getElementById('sec');
       var link = document.getElementById("fill");
 //       var selected_index = oForm.elements["height"].selectedIndex;
-//       link.setAttribute("action","mailto:esafe@esafe.co.in?subject=Customer Feedback - Fibre Glass Cage Ladder");
+       link.setAttribute("action","mailto:esafe@esafe.co.in?subject=Customer Feedback - Fibre Glass Cage Ladder"+one);
       
 //       // Changing the href attribute value
 //       if(selected_index == 1)
