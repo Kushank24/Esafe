@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title> ESAFE Fibre Glass Cage Ladder </title>
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center;padding: 15px;"> ESAFE Fibre Glass Cage Ladder </h1>
+    <div class="row">
+      <br>
+      <img style="width: 100%; height: 300px;" src="Products/Fibre Glass Cage Ladder.JPG" alt="ESAFE BARRICADES">
+      <div class="col-sm-8">
+        <h4 style="text-align: center;padding: 15px;"> About the Product </h4>
+        <p> E-SAFE Fibre Glass Heavy Duty Cage ladders are used in a wide range of industries. Our
+          Cage Ladders meet international Standards and have become the preferred system for
+          use in chemical plants and other corrosive environment. E-Safe Fiberglass cage ladder
+          systems are lightweight, corrosion resistant, easy to install, and outlast aluminum and
+          steel, and require little or no maintenance.</p>
+        <p> Available as per required height in multiple/single section. </p>
+          <br>
+      </div>
+      <div class="col-sm-4">
+        <h4 style="text-align: center; padding: 15px;"> General Purpose </h4>
+        <a style="text-align: center; padding: 10px;" href="https://en.wikipedia.org/wiki/Fixed_ladder"> What is Fibre Glass Cage Ladder? </a>
+        <br>
+        <a style="text-align: center; padding: 10px;" href="https://www.youtube.com/watch?v=19_jdq0jroA"> How to use Fibre Glass Cage Ladder </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+    <div class="col-sm-4"> <a href="mailto:esafe@esafe.co.in?subject=Customer Feedback - Fibre Glass Cage Ladder"> Customer Feedback </a></div>
+    <div class="col-sm-4">
+      <a href="#" style="padding: 15px;"> Send Product Inquiry: </a>
+      <form id="fill" action="#" method="post" enctype="text/plain"> 
+        <label id="h1" for="height">Choose height:</label>
+          <select id="height" name="height">
+            <option value="1 feet">1 feet</option>
+            <option value="2 feet">2 feet</option>
+            <option value="3 feet">3 feet</option>
+            <option value="4 feet">4 feet</option>
+          </select>
+        <br>
+        <label for="sec">Choose section:</label>
+          <select id="sec" name="section">
+            <option value="Single Section">Single Section</option>
+            <option value="Multiple Section">Multiple Section</option>
+          </select>
+        <br>
+        <input onclick="update()" style="margin: 10px;" type="submit" value="Send">
+        <input style="margin: 10px;" type="reset" value="Reset">
+      </form>
+    </div>
+    <div class="col-sm-4"> <a href="mailto:esafe@esafe.co.in?subject=Buy - Fibre Glass Cage Ladder"> Buy Now </a> </div>
+    </div>
+  </div>
+
+  <div class="Conatct Us" id="section4">
+    <h1 style="text-align: center; padding: 15px;"> Contact Us </h1>
+    <hr style="border: 2px solid black;"/>
+    <div class="row">
+      <div class="col-sm-7">
+        <h3 style="text-align: center; padding: 20px;"> Address: </h3>
+        <h4 style="margin-left: 15px;"> Address: H-446, M.G.C, Marudhar Industrial Area, 2nd Phase, Sangriya, Jodhpur, Rajasthan 342013 </h4>
+      </div>
+      <div class="col-sm-5">
+        <h4 style="text-align: center;"><a href="mailto:esafe@esafe.co.in"> Email </a></h4>
+        <h4 style="text-align: center;"> Call : +91-9413324321, +91 9829024321 </h4>
+      </div>
+    </div>
+  </div>
+  <script>
+    function update()
+    {
+      var one = document.getElementById('h1');
+      var two = document.getElementById('sec');
+      var link = document.getElementById("fill");
+      var selected_index = oForm.elements["height"].selectedIndex;
+
+    
+      // Changing the href attribute value
+      if(selected_index == 1)
+        link.setAttribute("action", "mailto:esafe@esafe.co.in?subject=Inquiry%20-%20Fibre%20Glass%20Double%20Step%20Ladder&body=We%20want%20Fibre%20Glass%20Cage%20Ladder%20with%20folowing%20speifications: 1");
+      if(selected_index == 2)
+        link.setAttribute("action", "mailto:esafe@esafe.co.in?subject=Inquiry%20-%20Fibre%20Glass%20Double%20Step%20Ladder&body=We%20want%20Fibre%20Glass%20Cage%20Ladder%20with%20folowing%20speifications: 2");
+      if(selected_index == 3)
+        link.setAttribute("action", "mailto:esafe@esafe.co.in?subject=Inquiry%20-%20Fibre%20Glass%20Double%20Step%20Ladder&body=We%20want%20Fibre%20Glass%20Cage%20Ladder%20with%20folowing%20speifications: 3");
+      if(selected_index == 0)
+        link.setAttribute("action", "mailto:esafe@esafe.co.in?subject=Inquiry%20-%20Fibre%20Glass%20Double%20Step%20Ladder&body=We%20want%20Fibre%20Glass%20Cage%20Ladder%20with%20folowing%20speifications: 4");
+    }
+  </script>
+</body>
+</html>
